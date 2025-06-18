@@ -17,20 +17,20 @@ pip install -r requirements.txt
 ```
 
 ## Create the AS graph
-This step is optional since this repository already provide data for March
+This step is optional since this repository already provide data for February
 2025.
 
 The following command fetch data from the Internet Yellow Pages and write the
 computed graph in a file. Change the country code and filename accordingly.
 ```
-python fetch_data.py  GB > 2025-03-08_GB.json
+python fetch_data.py  GB > 2025-02-01_GB.json
 ```
 
 
 ## Plot the AS graph
 Plot the computed graph with the following command:
 ```
-python plot.py 2025-03-08_GB.json 
+python plot.py 2025-02-01_GB.json 
 ```
 
 This creates two files (AS_graph_GB.png and AS_graph_GB.pdf).
