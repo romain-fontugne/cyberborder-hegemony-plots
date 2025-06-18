@@ -17,11 +17,11 @@ def query_iyp(country_code):
     RETURN  a.asn AS node0, b.asn AS node1, ca.country_code AS country0, cb.country_code AS country1
     """
 
-    # URI = 'neo4j://iyp-bolt.ihr.live:7687'
-    # AUTH = ('neo4j', 'password')
-
-    URI = 'neo4j://localhost:7687'
+    URI = 'neo4j://iyp-bolt.ihr.live:7687'
     AUTH = ('neo4j', 'password')
+
+    # URI = 'neo4j://localhost:7687'
+    # AUTH = ('neo4j', 'password')
 
     db = GraphDatabase.driver(URI, auth=AUTH)
 
